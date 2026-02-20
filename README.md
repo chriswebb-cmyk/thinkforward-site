@@ -1,10 +1,15 @@
-Think Forward Studio LLC — Website
-Official website for Think Forward Studio LLC. Military software solutions built by operators, for operators.
-Deployment
-This site auto-deploys to Netlify on push to main.
-Live site: thinkforwardstudio.com
-Stack
+# Think Forward Studio LLC — Website
 
-Static HTML/CSS/JS (single page)
-Hosted on Netlify
-Domain + Email via Google Workspace
+Official website for Think Forward Studio LLC. Military software solutions built by operators, for operators.
+
+## Deployment
+
+This site auto-deploys to Netlify on push to `main`.
+
+**Live site:** [thinkforwardstudio.com](https://thinkforwardstudio.com)
+
+## Stack
+
+- Static HTML/CSS/JS (single page)
+- Hosted on Netlify
+- Domain + Email via Google Workspace
