@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metis Planner Privacy Policy — Think Forward Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #0a0a0c;
+  --bg-secondary: #111114;
+  --bg-card: #16161a;
+  --bg-card-hover: #1c1c22;
+  --accent: #00e5a0;
+  --accent-dim: #00c88a;
+  --accent-glow: rgba(0, 229, 160, 0.15);
+  --accent-glow-strong: rgba(0, 229, 160, 0.3);
+  --text-primary: #e8e8ec;
+  --text-secondary: #8a8a96;
+  --text-muted: #55555f;
+  --border: #222228;
+  --border-light: #2a2a32;
+  --font-display: 'Rajdhani', sans-serif;
+  --font-body: 'Barlow', sans-serif;
+  --font-condensed: 'Barlow Condensed', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) var(--bg-secondary);
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+.grid-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+  background-image:
+    linear-gradient(rgba(0, 229, 160, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 229, 160, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse at center, black 0%, transparent 70%);
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(10, 10, 12, 0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-text {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.logo-text span { color: var(--accent); }
+
+.nav-back {
+  font-family: var(--font-condensed);
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.5rem 1.5rem;
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-back:hover {
+  background: var(--accent);
+  color: var(--bg-primary);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+/* ===== HEADER ===== */
+.page-header {
+  padding: 10rem 3rem 4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.page-header-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-label {
+  font-family: var(--font-condensed);
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.page-label::before {
+  content: '';
+  width: 30px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.page-label::after {
+  content: '';
+  width: 30px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.page-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
+}
+
+.page-title .accent { color: var(--accent); }
+
+.page-subtitle {
+  font-family: var(--font-condensed);
+  font-size: 1rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* ===== CONTENT ===== */
+.content-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 3rem 6rem;
+}
+
+.effective-date {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  padding: 1rem 1.5rem;
+  margin-bottom: 3rem;
+  font-family: var(--font-condensed);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.effective-date strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.intro {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 3rem 0 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: var(--accent);
+}
+
+h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 1.75rem 0 0.75rem;
+}
+
+p {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+ul li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.85rem;
+  top: 0.15rem;
+}
+
+ul li strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+p strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* ===== TABLE ===== */
+.table-wrapper {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  min-width: 600px;
+}
+
+th {
+  background: var(--bg-secondary);
+  color: var(--accent);
+  font-family: var(--font-condensed);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--accent);
+}
+
+td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-weight: 300;
+  vertical-align: top;
+}
+
+tr:last-child td { border-bottom: none; }
+
+tr:hover td { background: var(--bg-card-hover); }
+
+/* ===== CONTACT BOX ===== */
+.contact-box {
+  margin-top: 4rem;
+  padding: 2.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.contact-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+}
+
+.corner-tl, .corner-tr, .corner-bl, .corner-br {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  opacity: 0.4;
+}
+
+.corner-tl { top: 1rem; left: 1rem; border-top: 1px solid var(--accent); border-left: 1px solid var(--accent); }
+.corner-tr { top: 1rem; right: 1rem; border-top: 1px solid var(--accent); border-right: 1px solid var(--accent); }
+.corner-bl { bottom: 1rem; left: 1rem; border-bottom: 1px solid var(--accent); border-left: 1px solid var(--accent); }
+.corner-br { bottom: 1rem; right: 1rem; border-bottom: 1px solid var(--accent); border-right: 1px solid var(--accent); }
+
+.contact-box-label {
+  font-family: var(--font-condensed);
+  font-size: 0.75rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 0.75rem;
+}
+
+.contact-box h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  border: none;
+  padding: 0;
+}
+
+.contact-box p {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.contact-box a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.contact-box a:hover {
+  border-bottom-color: var(--accent);
+  text-shadow: 0 0 10px var(--accent-glow-strong);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  padding: 2.5rem 3rem;
+  border-top: 1px solid var(--border);
+  background: var(--bg-secondary);
+  text-align: center;
+}
+
+.footer-logo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.footer-logo span { color: var(--accent); }
+
+.footer-copy {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* ===== PLANNED-FEATURE TAG ===== */
+.soon {
+  font-family: var(--font-condensed);
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: var(--bg-primary);
+  background: var(--accent-dim);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 0.1rem 0.45rem;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  nav { padding: 1rem 1.5rem; }
+  .logo-text { font-size: 1rem; }
+  .page-header { padding: 8rem 1.5rem 3rem; }
+  .content-wrapper { padding: 1rem 1.5rem 4rem; }
+  .contact-box { padding: 2rem 1.5rem; }
+  footer { padding: 2rem 1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="grid-bg"></div>
+
+<!-- NAVIGATION -->
+<nav>
+  <a href="/" class="nav-logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 4L36 12V28L20 36L4 28V12L20 4Z" stroke="#00e5a0" stroke-width="1.5" fill="none"/>
+        <path d="M20 10L30 16V26L20 32L10 26V16L20 10Z" stroke="#00e5a0" stroke-width="1" fill="rgba(0,229,160,0.1)"/>
+        <path d="M20 14L14 18V24L20 28" stroke="#00e5a0" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+        <circle cx="20" cy="20" r="2" fill="#00e5a0"/>
+        <path d="M22 16L28 20" stroke="#00e5a0" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+      </svg>
+    </div>
+    <div class="logo-text">Think <span>Forward</span><br>Studio</div>
+  </a>
+
+  <a href="/" class="nav-back">← Back to Site</a>
+</nav>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <div class="page-header-content">
+    <div class="page-label">Legal Document</div>
+    <h1 class="page-title">Metis <span class="accent">Privacy</span> Policy</h1>
+    <div class="page-subtitle">Think Forward Studio</div>
+  </div>
+</header>
+
+<!-- CONTENT -->
+<main class="content-wrapper">
+
+  <div class="effective-date">
+    <strong>Effective Date:</strong> October 4, 2026 &nbsp;·&nbsp; <strong>Last Updated:</strong> October 4, 2026 &nbsp;·&nbsp; <strong>Version:</strong> 2
+  </div>
+
+  <p class="intro">Think Forward Studio ("we," "our," or "us") operates Metis Planner ("Metis" or the "App"), a shared planner for households: calendar, tasks, meals, family information and trips. This Privacy Policy explains what information Metis collects, how we use and share it, how long we keep it, and the choices you have. Some features described here are not yet available in every version of the App; they are marked <span class="soon">When available</span>, and this policy describes how data will be handled when they are.</p>
+
+  <h2>Who This Policy Covers</h2>
+  <p>Metis accounts are for adults. An adult creates a household and can add other people to it — other adults (who may join with their own account using an invitation code) and children (who have profiles, not accounts). This policy covers information about everyone in a household, including people who don't have an account.</p>
+
+  <h2>Information We Collect</h2>
+
+  <h3>Account Information</h3>
+  <ul>
+    <li><strong>Sign-in details:</strong> Your email address and password. Your password is stored only as a one-way hash by our authentication provider; we can't read it.</li>
+    <li><strong>Your profile in the household:</strong> Your display name, role (owner, parent or adult) and color.</li>
+    <li><strong>Privacy acknowledgement:</strong> Which version of our privacy notice you accepted, and when.</li>
+  </ul>
+
+  <h3>Household Information You Add</h3>
+  <ul>
+    <li><strong>Calendar:</strong> Event titles, dates and times, locations, event types, and who an event involves.</li>
+    <li><strong>Tasks:</strong> Titles, notes, locations, due dates and times, who a task is assigned to, and who completed or deleted it and when.</li>
+    <li><strong>Meals:</strong> Recipes (titles, ingredients, instructions, tags), dinner plans and grocery lists.</li>
+    <li><strong>Family Hub:</strong> Contacts, school details, shared notes, packing lists and their items, and the "Important Information" category, which only adults can see.</li>
+    <li><strong>Trips:</strong> Trip names and dates, who is traveling, each stop's location (as text you type), arrival and departure dates and times, how you travel between stops, travel time, distance and estimated cost, lodging type, name, link and cost, and details you add such as confirmation numbers.</li>
+    <li><strong>Invitations:</strong> When an adult invites someone to join, we store a one-way hash of the invitation code — never the code itself — and when it expires or is used.</li>
+  </ul>
+
+  <h3>Information About Children</h3>
+  <p>Children cannot create accounts or sign in. An adult in the household may add a child's name and color and, optionally, the child's birth year, school, grade and notes, and may include the child in events, tasks and trips. We ask adults to keep this to what the family needs to plan (see "Sensitive Information" below).</p>
+
+  <h3>Messages You Send to Metis <span class="soon">When available</span></h3>
+  <ul>
+    <li><strong>Forwarded email:</strong> Each household can have its own email address. When an email is sent to it — by you or by anyone else — we receive its sender, subject and text.</li>
+    <li><strong>Shared or pasted text:</strong> Text you share into Metis from another app (such as a message from your school) or paste into it.</li>
+  </ul>
+  <p>Metis uses AI to suggest events and tasks from these messages. <strong>Nothing is added to your household until an adult reviews and confirms it.</strong></p>
+
+  <h3>Connected Services <span class="soon">When available</span></h3>
+  <ul>
+    <li><strong>Calendars:</strong> If you choose to connect a Google, Microsoft or Apple calendar, we receive event information from the calendars you select, plus the access credentials needed to keep them in sync. You choose which calendars to connect and can disconnect them at any time.</li>
+    <li><strong>Notifications:</strong> If you allow notifications, we store a push token that identifies your device to Apple's notification service, along with your notification settings.</li>
+  </ul>
+
+  <h3>Technical Information</h3>
+  <ul>
+    <li><strong>Activity record:</strong> A record of certain actions in your household — such as creating or deleting the household, adding, removing or changing members, invitations, and which AI suggestions an adult confirmed or dismissed — with who did it and when. It is used for security and your household's history.</li>
+    <li><strong>Service logs:</strong> Our hosting provider keeps short-lived technical logs of requests to our servers (such as IP address, time and request details) for security and troubleshooting.</li>
+  </ul>
+
+  <h2>What We Do Not Collect</h2>
+  <ul>
+    <li><strong>Your device's location:</strong> Metis does not request location permission or read your GPS location. Trip locations are only the text you type.</li>
+    <li><strong>Contacts, photos or health data:</strong> Metis does not access your device's contacts, photo library or health data.</li>
+    <li><strong>Analytics or crash-reporting tools:</strong> Metis does not currently include third-party analytics or crash-reporting software. If that changes, we will update this policy first.</li>
+    <li><strong>Advertising identifiers:</strong> We do not use advertising identifiers, do not show ads, and do not track you across other apps or websites. Metis does not request App Tracking Transparency permission.</li>
+    <li><strong>Payment information:</strong> Metis does not take payments. Any future paid features would be processed by Apple through the App Store; we would not receive your payment details.</li>
+  </ul>
+
+  <h2>How We Use Your Information</h2>
+  <ul>
+    <li><strong>To run Metis for your household:</strong> storing what you add and showing it to the other adults in your household.</li>
+    <li><strong>AI suggestions:</strong> finding dates and tasks in messages you send to Metis <span class="soon">When available</span>, and, if we add them, answering questions about your household's plans and preparing weekly summaries <span class="soon">When available</span>. See "How Metis Uses AI" below.</li>
+    <li><strong>Drive estimates:</strong> estimating driving time and distance between two stops of a trip <span class="soon">When available</span>.</li>
+    <li><strong>Notifications:</strong> reminders, assignments and summaries you've chosen to receive <span class="soon">When available</span>.</li>
+    <li><strong>Security and support:</strong> protecting accounts, preventing misuse, fixing problems, and answering your requests.</li>
+  </ul>
+  <p>We do not sell your information, share it for advertising, or use it to train AI models.</p>
+
+  <h2>How Metis Uses AI</h2>
+  <p>Metis uses Claude, an AI model provided by Anthropic, through Anthropic's commercial service.</p>
+  <ul>
+    <li><strong>Message capture <span class="soon">When available</span>:</strong> We send the message's sender, subject and text, plus the names and roles of your household members (including children), so the AI can tell who a message is about. The AI's suggestions are shown to the adults in your household; nothing is added until an adult confirms it.</li>
+    <li><strong>Questions and summaries <span class="soon">When available</span>:</strong> If we add the ability to ask questions about your household's plans or to receive weekly summaries, we will send the parts of your household's information needed to answer. Items in the "Important Information" category are not sent.</li>
+    <li><strong>What Anthropic does with it:</strong> According to Anthropic's commercial terms, Anthropic does not use this information to train its models by default and deletes it within 30 days, subject to the exceptions in those terms. See <a href="https://www.anthropic.com/legal/privacy" style="color: var(--accent);">Anthropic's privacy policy</a>.</li>
+  </ul>
+
+  <h2>Sharing Your Information</h2>
+
+  <h3>Within Your Household</h3>
+  <p>Everything in a household — including messages sent to its email address — is visible to the adults in that household. "Important Information" items are visible to adults only. Children do not have accounts.</p>
+
+  <h3>Service Providers</h3>
+  <p>We share information only with the service providers that run Metis for us, only for that purpose, and only as described below.</p>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Purpose</th>
+          <th>Data Shared</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Supabase</td>
+          <td>Database, sign-in and server functions (hosted in the United States: US East, N. Virginia)</td>
+          <td>All information stored in Metis</td>
+        </tr>
+        <tr>
+          <td>Anthropic (Claude AI) <span class="soon">When available</span></td>
+          <td>Finding dates and tasks in messages; questions and summaries</td>
+          <td>Message sender, subject and text; household members' names and roles; household information needed to answer a question</td>
+        </tr>
+        <tr>
+          <td>Email delivery provider <span class="soon">When available</span></td>
+          <td>Receiving email sent to your household's address</td>
+          <td>The emails sent to that address</td>
+        </tr>
+        <tr>
+          <td>Apple (Apple Maps) <span class="soon">When available</span></td>
+          <td>Estimating driving time and distance</td>
+          <td>The two locations of a trip leg, as text — no account or household details</td>
+        </tr>
+        <tr>
+          <td>Expo and Apple (push notifications) <span class="soon">When available</span></td>
+          <td>Delivering notifications to your device</td>
+          <td>Your device's push token and the notification's text. Expo states it does not store notification contents beyond delivery.</td>
+        </tr>
+        <tr>
+          <td>Google, Microsoft, Apple (calendars) <span class="soon">When available</span></td>
+          <td>Syncing calendars you choose to connect</td>
+          <td>Access credentials and the events you choose to sync</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Legal Requirements and Business Changes</h3>
+  <p>We may disclose information if required by law, or to protect the safety of any person. If Think Forward Studio is involved in a merger, acquisition or sale of assets, information may be transferred as part of that transaction, and this policy will continue to apply to it.</p>
+
+  <h2>Sensitive Information</h2>
+  <p>Metis is built to hold your family's plans, not its secrets. Please do not store Social Security numbers, card numbers or security codes, bank account or routing numbers, passwords or PINs, passport, driver's license or other ID numbers, or medical record numbers and detailed health information. Metis warns you if text you're saving looks like some of these.</p>
+
+  <h2>Data Storage &amp; Security</h2>
+  <ul>
+    <li><strong>Where it's stored:</strong> Metis data is stored by Supabase in the United States (US East, N. Virginia).</li>
+    <li><strong>Encryption:</strong> Information is encrypted in transit and encrypted at rest by our hosting provider. It is not end-to-end encrypted: our systems can read it, which is what lets Metis organize it and show it to your household.</li>
+    <li><strong>Access controls:</strong> Each household's information is separated at the database level, so only members of that household can reach it, and "Important Information" is limited to adults.</li>
+    <li><strong>Our access:</strong> We access household information only when needed to operate Metis, fix a problem, or respond to a request from you.</li>
+  </ul>
+
+  <h2>Data Retention</h2>
+  <p>We keep what you add to Metis until you or another adult in your household deletes it, or the household or account is deleted. Some information is removed automatically sooner:</p>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Information</th>
+          <th>Retention</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Completed and deleted tasks</td>
+          <td>The newest 25 per household are kept for your history; older ones are permanently deleted</td>
+        </tr>
+        <tr>
+          <td>Cleared grocery items</td>
+          <td>Deleted 60 days after they're cleared</td>
+        </tr>
+        <tr>
+          <td>Dinner plans</td>
+          <td>Deleted 60 days after their date</td>
+        </tr>
+        <tr>
+          <td>Captured message text <span class="soon">When available</span></td>
+          <td>30 days after a message is handled, its text is shortened to its first 500 characters (kept so you can see where a suggestion came from)</td>
+        </tr>
+        <tr>
+          <td>Notification records <span class="soon">When available</span></td>
+          <td>Deleted 90 days after they're sent or cancelled</td>
+        </tr>
+        <tr>
+          <td>Activity record of a deleted household</td>
+          <td>Kept for 90 days after the household is deleted, for security, then deleted</td>
+        </tr>
+        <tr>
+          <td>Backups</td>
+          <td>Copies of the database made for recovery are kept for no more than 30 days. Information you delete may remain in a backup until that backup expires.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Your Rights &amp; Choices</h2>
+  <ul>
+    <li><strong>See your information:</strong> Everything your household has stored is visible in the App.</li>
+    <li><strong>Correct or delete items:</strong> Adults can edit or delete events, tasks, meals, Family Hub items and trips at any time.</li>
+    <li><strong>Export:</strong> The household owner can download a copy of the household's information (Settings &gt; Your Data &gt; Export).</li>
+    <li><strong>Leave a household:</strong> An adult who isn't the owner can leave. Their account is unlinked; their name stays on the household's profile list so the household's plans still make sense, and a parent can remove it.</li>
+    <li><strong>Delete your account:</strong> Settings &gt; Account &gt; Delete My Account. If you are the only account in your household, the household and everything in it are deleted with your account. If other adults use your household, you'll be asked to transfer ownership first.</li>
+    <li><strong>Delete your household:</strong> The household owner can delete the household and everything in it (Settings &gt; Your Data &gt; Delete Household).</li>
+    <li><strong>Withdraw consent:</strong> You can stop using Metis and delete your account at any time. You can turn off notifications in your device's settings <span class="soon">When available</span> and disconnect connected calendars in the App <span class="soon">When available</span>.</li>
+    <li><strong>Ask us:</strong> You can also email us to request a copy, correction or deletion of your information. We aim to respond within 30 days.</li>
+  </ul>
+
+  <h2>Children's Privacy</h2>
+  <p>Metis is not directed to children under 13, and children cannot create accounts or sign in. Information about children is added by an adult in their household, who can review, change or delete it in the App at any time, or ask us to delete it using the contact details below. If you believe a child has given us information directly, please contact us and we will delete it.</p>
+
+  <h2>Where We Operate</h2>
+  <p>Think Forward Studio is based in the United States, and Metis data is stored in the United States.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this policy as Metis changes. We will post the updated policy on this page and change the "Last Updated" date. When we make a change that matters to how your information is handled, the App will ask every adult to read and accept the updated notice before continuing.</p>
+
+  <!-- CONTACT BOX -->
+  <div class="contact-box">
+    <div class="corner-tl"></div>
+    <div class="corner-tr"></div>
+    <div class="corner-bl"></div>
+    <div class="corner-br"></div>
+    <div class="contact-box-label">Get In Touch</div>
+    <h3>Contact Us</h3>
+    <p>For privacy questions or data requests:</p>
+    <p><strong style="color: var(--text-primary);">Think Forward Studio</strong></p>
+    <p><a href="mailto:joshuabone@thinkforwardstudio.com">joshuabone@thinkforwardstudio.com</a></p>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Think <span>Forward</span> Studio LLC</div>
+  <div class="footer-copy">&copy; 2026 Think Forward Studio LLC. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
