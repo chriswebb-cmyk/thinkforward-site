@@ -531,6 +531,7 @@ footer {
   <ul>
     <li><strong>Forwarded email:</strong> Each household can have its own email address. When an email is sent to it — by you or by anyone else — we receive its sender, subject and text.</li>
     <li><strong>Shared or pasted text:</strong> Text you share into Metis from another app (such as a message from your school) or paste into it.</li>
+    <li><strong>Senders:</strong> The email addresses that have written to your household's address, so adults can block unwanted senders. This list is kept until the household is deleted.</li>
   </ul>
   <p>Metis uses AI to suggest events and tasks from these messages. <strong>Nothing is added to your household until an adult reviews and confirms it.</strong></p>
 
@@ -568,7 +569,7 @@ footer {
   <h2>How Metis Uses AI</h2>
   <p>Metis uses Claude, an AI model provided by Anthropic, through Anthropic's commercial service.</p>
   <ul>
-    <li><strong>Message capture <span class="soon">When available</span>:</strong> We send the message's sender, subject and text, plus the names and roles of your household members (including children), so the AI can tell who a message is about. The AI's suggestions are shown to the adults in your household; nothing is added until an adult confirms it.</li>
+    <li><strong>Message capture <span class="soon">When available</span>:</strong> We send the message's sender, subject and text, the names and roles of your household members (including children) so the AI can tell who a message is about, your household's time zone so dates and times come out right, and whether the sender is one your household trusts. The AI's suggestions are shown to the adults in your household; nothing is added until an adult confirms it.</li>
     <li><strong>Questions and summaries <span class="soon">When available</span>:</strong> If we add the ability to ask questions about your household's plans or to receive weekly summaries, we will send the parts of your household's information needed to answer. Items in the "Important Information" category are not sent.</li>
     <li><strong>What Anthropic does with it:</strong> According to Anthropic's commercial terms, Anthropic does not use this information to train its models by default and deletes it within 30 days, subject to the exceptions in those terms. See <a href="https://www.anthropic.com/legal/privacy" style="color: var(--accent);">Anthropic's privacy policy</a>.</li>
   </ul>
@@ -598,7 +599,7 @@ footer {
         <tr>
           <td>Anthropic (Claude AI) <span class="soon">When available</span></td>
           <td>Finding dates and tasks in messages; questions and summaries</td>
-          <td>Message sender, subject and text; household members' names and roles; household information needed to answer a question</td>
+          <td>Message sender, subject and text; household members' names and roles; your household's time zone; household information needed to answer a question</td>
         </tr>
         <tr>
           <td>Email delivery provider <span class="soon">When available</span></td>
@@ -684,17 +685,23 @@ footer {
   <h2>Your Rights &amp; Choices</h2>
   <ul>
     <li><strong>See your information:</strong> Everything your household has stored is visible in the App.</li>
-    <li><strong>Correct or delete items:</strong> Adults can edit or delete events, tasks, meals, Family Hub items and trips at any time.</li>
-    <li><strong>Export:</strong> The household owner can download a copy of the household's information (Settings &gt; Your Data &gt; Export).</li>
+    <li><strong>Correct or delete items:</strong> Adults can edit or delete tasks, recipes, packing lists and trips; change dinner plans; tick and clear grocery items; and delete Family Hub items, at any time. Editing calendar events, Family Hub items and children's profiles in the App is coming; until then, email us and we will change or delete them for you.</li>
+    <li><strong>Export:</strong> The household owner can download a copy of the household's information — its members and children's profiles, events, tasks, meals, Family Hub items, trips and captured messages (Settings &gt; Your Data &gt; Export Household Data).</li>
     <li><strong>Leave a household:</strong> An adult who isn't the owner can leave. Their account is unlinked; their name stays on the household's profile list so the household's plans still make sense, and a parent can remove it.</li>
-    <li><strong>Delete your account:</strong> Settings &gt; Account &gt; Delete My Account. If you are the only account in your household, the household and everything in it are deleted with your account. If other adults use your household, you'll be asked to transfer ownership first.</li>
-    <li><strong>Delete your household:</strong> The household owner can delete the household and everything in it (Settings &gt; Your Data &gt; Delete Household).</li>
+    <li><strong>Delete your account:</strong> Settings &gt; Your Data &gt; Delete My Account (also offered on the household setup and privacy notice screens, so you can delete an account that has no household). What happens depends on your place in the household:
+      <ul style="margin-top: 0.75rem;">
+        <li>If you are the only account in your household, the household and everything in it are deleted with your account.</li>
+        <li>If you own a household that other adults use, you'll be asked to make one of them the owner first (Family &gt; tap their name &gt; “Make … the owner”).</li>
+        <li>Otherwise, your account is deleted and your name stays on your household's list, unlinked, so its plans still make sense; a parent can remove it.</li>
+      </ul>
+    </li>
+    <li><strong>Delete your household:</strong> The household owner can delete the household and everything in it, including children's profiles (Settings &gt; Your Data &gt; Delete Household).</li>
     <li><strong>Withdraw consent:</strong> You can stop using Metis and delete your account at any time. You can turn off notifications in your device's settings <span class="soon">When available</span> and disconnect connected calendars in the App <span class="soon">When available</span>.</li>
     <li><strong>Ask us:</strong> You can also email us to request a copy, correction or deletion of your information. We aim to respond within 30 days.</li>
   </ul>
 
   <h2>Children's Privacy</h2>
-  <p>Metis is not directed to children under 13, and children cannot create accounts or sign in. Information about children is added by an adult in their household, who can review, change or delete it in the App at any time, or ask us to delete it using the contact details below. If you believe a child has given us information directly, please contact us and we will delete it.</p>
+  <p>Metis is not directed to children under 13, and children cannot create accounts or sign in. Information about children is added by an adult in their household, who can review it in the App at any time, remove a child from the household (which deletes the child's profile), or ask us to change or delete it using the contact details below. If you believe a child has given us information directly, please contact us and we will delete it.</p>
 
   <h2>Where We Operate</h2>
   <p>Think Forward Studio is based in the United States, and Metis data is stored in the United States.</p>
