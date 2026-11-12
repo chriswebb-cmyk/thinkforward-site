@@ -497,7 +497,7 @@ footer {
 <main class="content-wrapper">
 
   <div class="effective-date">
-    <strong>Effective Date:</strong> October 4, 2026 &nbsp;·&nbsp; <strong>Last Updated:</strong> October 5, 2026 &nbsp;·&nbsp; <strong>Version:</strong> 2
+    <strong>Effective Date:</strong> November 11, 2026 &nbsp;·&nbsp; <strong>Last Updated:</strong> November 11, 2026 &nbsp;·&nbsp; <strong>Version:</strong> 3
   </div>
 
   <p class="intro">Think Forward Studio ("we," "our," or "us") operates Metis Planner ("Metis" or the "App"), a shared planner for households: calendar, tasks, meals, family information and trips. This Privacy Policy explains what information Metis collects, how we use and share it, how long we keep it, and the choices you have. Some features described here are not yet available in every version of the App; they are marked <span class="soon">When available</span>, and this policy describes how data will be handled when they are.</p>
@@ -512,6 +512,8 @@ footer {
     <li><strong>Sign-in details:</strong> Your email address and password. Your password is stored only as a one-way hash by our authentication provider; we can't read it.</li>
     <li><strong>Your profile in the household:</strong> Your display name and role (owner, parent or adult).</li>
     <li><strong>Privacy acknowledgement:</strong> Which version of our privacy notice you accepted, and when.</li>
+    <li><strong>Sign-in emails:</strong> We email you to confirm your address and, if you ask to reset your password <span class="soon">When available</span>, a link to do so. An email-sending provider may deliver these for us <span class="soon">When available</span>; it receives your email address and the email we send.</li>
+    <li><strong>Sign-in sessions:</strong> When you sign in, our authentication provider records when the session started and was last used, your IP address, and the type of device or browser, to keep you signed in and protect your account. These records are deleted with your account.</li>
   </ul>
 
   <h3>Household Information You Add</h3>
@@ -532,13 +534,13 @@ footer {
   <ul>
     <li><strong>Forwarded email:</strong> Each household can have its own email address. When an email is sent to it — by you or by anyone else — we receive its sender, subject and text.</li>
     <li><strong>Shared or pasted text:</strong> Text you share into Metis from another app (such as a message from your school) or paste into it.</li>
-    <li><strong>Senders:</strong> The email addresses that have written to your household's address, so adults can block unwanted senders. This list is kept until the household is deleted.</li>
+    <li><strong>Senders:</strong> The email addresses that have written to your household's address, so adults can allow or block senders. This list is kept until the household is deleted.</li>
   </ul>
-  <p>Metis uses AI to suggest events and tasks from these messages. <strong>Nothing is added to your household until an adult reviews and confirms it.</strong></p>
+  <p>Metis uses AI to suggest events and tasks from these messages. An adult in your household is asked to agree before Metis reads your household's first message: until then, your household's address does not accept mail. An adult can switch it off again at any time. <strong>Nothing is added to your household until an adult reviews and confirms it.</strong></p>
 
   <h3>Connected Services <span class="soon">When available</span></h3>
   <ul>
-    <li><strong>Calendars:</strong> If you choose to connect a Google, Microsoft or Apple calendar, we receive event information from the calendars you select, plus the access credentials needed to keep them in sync. You choose which calendars to connect and can disconnect them at any time.</li>
+    <li><strong>Calendar links:</strong> If you paste a calendar's link into Metis (a sharing address from a calendar service such as Cozi, Apple, Google or Microsoft), we store the link and our servers fetch the calendar from that service to keep it up to date. The service sees a request from Metis's servers, not from your phone. The events in the calendar are stored in your household like any others. You choose which calendars to connect and can disconnect them at any time.</li>
     <li><strong>Notifications:</strong> If you allow notifications, we store a push token that identifies your device to Apple's notification service, along with your notification settings.</li>
   </ul>
 
@@ -546,13 +548,16 @@ footer {
   <ul>
     <li><strong>Activity record:</strong> A record of certain actions in your household — such as creating or deleting the household, adding, removing or changing members, invitations, and which AI suggestions an adult confirmed or dismissed — with who did it and when. It is used for security and your household's history.</li>
     <li><strong>Service logs:</strong> Our hosting provider keeps short-lived technical logs of requests to our servers (such as IP address, time and request details) for security and troubleshooting.</li>
+    <li><strong>Days you open Metis <span class="soon">When available</span>:</strong> For each adult, the dates on which they opened the App: the date only, never what they did. It is the one thing we measure ourselves, so we can tell whether Metis is useful, and it is deleted after 90 days.</li>
+    <li><strong>Error reports <span class="soon">When available</span>:</strong> When the App or our servers hit an error, a technical report of what failed is sent to our error-reporting provider, Sentry, with the App's version and your phone's model and iOS version. Reports are built to leave out what you've saved: no names, no email addresses, no message text. Like any request your phone makes, a report also reaches Sentry with your phone's language setting and network address; we have Sentry set not to keep the address or a location worked out from it. Sentry sorts similar reports together automatically, including with software of its own that compares one report's technical text with another's.</li>
+    <li><strong>App updates <span class="soon">When available</span>:</strong> Your phone asks Expo's update service whether a newer version of Metis is available. The request says which version of the App it runs and carries an anonymous identifier for this installation of the App. If Metis failed while starting, the request also carries a short technical description of that failure.</li>
   </ul>
 
   <h2>What We Do Not Collect</h2>
   <ul>
     <li><strong>Your device's location:</strong> Metis does not request location permission or read your GPS location. Trip locations are only the text you type.</li>
     <li><strong>Contacts, photos or health data:</strong> Metis does not access your device's contacts, photo library or health data.</li>
-    <li><strong>Analytics or crash-reporting tools:</strong> Metis does not currently include third-party analytics or crash-reporting software. If that changes, we will update this policy first.</li>
+    <li><strong>Third-party analytics:</strong> Metis does not include third-party analytics software. We measure one thing ourselves: the days each adult opens the App <span class="soon">When available</span> (see "Technical Information" above).</li>
     <li><strong>Advertising identifiers:</strong> We do not use advertising identifiers, do not show ads, and do not track you across other apps or websites. Metis does not request App Tracking Transparency permission.</li>
     <li><strong>Payment information:</strong> Metis does not take payments. Any future paid features would be processed by Apple through the App Store; we would not receive your payment details.</li>
   </ul>
@@ -563,6 +568,8 @@ footer {
     <li><strong>AI suggestions:</strong> finding dates and tasks in messages you send to Metis <span class="soon">When available</span>, and, if we add them, answering questions about your household's plans and preparing weekly summaries <span class="soon">When available</span>. See "How Metis Uses AI" below.</li>
     <li><strong>Drive estimates:</strong> estimating driving time and distance between two stops of a trip <span class="soon">When available</span>.</li>
     <li><strong>Notifications:</strong> reminders, assignments and summaries you've chosen to receive <span class="soon">When available</span>.</li>
+    <li><strong>Keeping Metis working:</strong> finding and fixing errors from error reports, and delivering updates to the App <span class="soon">When available</span>.</li>
+    <li><strong>Knowing whether Metis is useful:</strong> the record of days each adult opens the App <span class="soon">When available</span>.</li>
     <li><strong>Security and support:</strong> protecting accounts, preventing misuse, fixing problems, and answering your requests.</li>
   </ul>
   <p>We do not sell your information, share it for advertising, or use it to train AI models.</p>
@@ -570,7 +577,7 @@ footer {
   <h2>How Metis Uses AI</h2>
   <p>Metis uses Claude, an AI model provided by Anthropic, through Anthropic's commercial service.</p>
   <ul>
-    <li><strong>Message capture <span class="soon">When available</span>:</strong> We send the message's sender, subject and text, the names and roles of your household members (including children) so the AI can tell who a message is about, your household's time zone so dates and times come out right, and whether the sender is one your household trusts. The AI's suggestions are shown to the adults in your household; nothing is added until an adult confirms it.</li>
+    <li><strong>Message capture <span class="soon">When available</span>:</strong> We send the message's sender, subject and text, the names and roles of your household members (including children) so the AI can tell who a message is about, your household's time zone so dates and times come out right, and whether the sender is one your household trusts. An adult in your household is asked to agree before your household's first message is sent. The AI's suggestions are shown to the adults in your household; nothing is added until an adult confirms it.</li>
     <li><strong>Questions and summaries <span class="soon">When available</span>:</strong> If we add the ability to ask questions about your household's plans or to receive weekly summaries, we will send the parts of your household's information needed to answer. Items in the "Important Information" category are not sent.</li>
     <li><strong>What Anthropic does with it:</strong> According to Anthropic's commercial terms, Anthropic does not use this information to train its models by default and deletes it within 30 days, subject to the exceptions in those terms. See <a href="https://www.anthropic.com/legal/privacy" style="color: var(--accent);">Anthropic's privacy policy</a>.</li>
   </ul>
@@ -608,6 +615,11 @@ footer {
           <td>The emails sent to that address</td>
         </tr>
         <tr>
+          <td>Email-sending provider <span class="soon">When available</span></td>
+          <td>Sending sign-in emails, such as confirming your address or resetting a password</td>
+          <td>Your email address and the email we send you</td>
+        </tr>
+        <tr>
           <td>Apple (Apple Maps) <span class="soon">When available</span></td>
           <td>Estimating driving time and distance</td>
           <td>The two locations of a trip leg, as text — no account or household details</td>
@@ -618,9 +630,19 @@ footer {
           <td>Your device's push token and the notification's text. Expo states it does not store notification contents beyond delivery.</td>
         </tr>
         <tr>
-          <td>Google, Microsoft, Apple (calendars) <span class="soon">When available</span></td>
-          <td>Syncing calendars you choose to connect</td>
-          <td>Access credentials and the events you choose to sync</td>
+          <td>Expo (app updates) <span class="soon">When available</span></td>
+          <td>Delivering updates to the App</td>
+          <td>Which version of the App your phone runs, an anonymous identifier for this installation of the App and, if Metis failed while starting, a short technical description of that failure</td>
+        </tr>
+        <tr>
+          <td>Sentry (error reports) <span class="soon">When available</span></td>
+          <td>Finding and fixing errors in the App and on our servers</td>
+          <td>A technical report of what failed, the App's version, and your phone's model and iOS version. Built to leave out names, email addresses and anything you've saved in Metis.</td>
+        </tr>
+        <tr>
+          <td>Calendar services you connect, such as Cozi, Apple, Google and Microsoft <span class="soon">When available</span></td>
+          <td>Keeping calendars you choose to connect up to date</td>
+          <td>A request from our servers to the link you gave us. We send the service nothing else about you or your household.</td>
         </tr>
       </tbody>
     </table>
@@ -672,6 +694,14 @@ footer {
           <td>Deleted 90 days after they're sent or cancelled</td>
         </tr>
         <tr>
+          <td>Record of days you opened Metis <span class="soon">When available</span></td>
+          <td>Deleted after 90 days</td>
+        </tr>
+        <tr>
+          <td>Error reports <span class="soon">When available</span></td>
+          <td>Kept by our error-reporting provider for up to 90 days</td>
+        </tr>
+        <tr>
           <td>Activity record of a deleted household</td>
           <td>Kept for 90 days after the household is deleted, for security, then deleted</td>
         </tr>
@@ -697,7 +727,7 @@ footer {
       </ul>
     </li>
     <li><strong>Delete your household:</strong> The household owner can delete the household and everything in it, including children's profiles (Settings &gt; Your Data &gt; Delete Household).</li>
-    <li><strong>Withdraw consent:</strong> You can stop using Metis and delete your account at any time. You can turn off notifications in your device's settings <span class="soon">When available</span> and disconnect connected calendars in the App <span class="soon">When available</span>.</li>
+    <li><strong>Withdraw consent:</strong> You can stop using Metis and delete your account at any time. You can turn off notifications in your device's settings <span class="soon">When available</span>, disconnect connected calendars in the App <span class="soon">When available</span>, and switch off your household's email address, which stops messages being read by AI <span class="soon">When available</span>. Error reports and the record of days you open Metis have no switch. You can ask us to delete your record of days opened; error reports are not linked to your account and are deleted within 90 days.</li>
     <li><strong>Ask us:</strong> You can also email us to request a copy, correction or deletion of your information. We aim to respond within 30 days.</li>
   </ul>
 
